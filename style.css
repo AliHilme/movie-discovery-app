@@ -1,0 +1,103 @@
+/* Genel Ayarlar ve Karanlık Tema */
+body {
+    background-color: #141414; /* Netflix siyahı */
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Üst Kısım (Arama alanı) */
+.header h1 {
+    color: #e50914; /* Netflix kırmızısı */
+}
+
+.search-box input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* BİLGİ EKRANI */
+#bilgiEkrani {
+    margin-top: 20px;
+    color: #b3b3b3;
+}
+
+/* FİLM KARTLARI IZGARASI (GRID SİHRİ) */
+.movie-grid {
+    display: grid;
+    /* Yan yana kartlar sığdığı kadar dizilir */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* TEK BİR FİLM KARTININ GÖRÜNÜMÜ */
+.movie-card {
+    background-color: #222;
+    border-radius: 8px;
+    overflow: hidden; /* Resimlerin köşelerini yuvarlar */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    transition: transform 0.2s; /* Fareyle üzerine gelince büyüme animasyonu */
+}
+
+.movie-card:hover {
+    transform: scale(1.05); /* Biraz büyür */
+}
+
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.movie-info {
+    padding: 15px;
+}
+
+.movie-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.rating {
+    color: #f5c518; /* IMDB sarısı */
+    font-weight: bold;
+}
+
+
+
+/* Favori Butonu Tasarımı */
+.fav-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.fav-btn:hover {
+    background-color: white;
+    color: black;
+}
